@@ -1,0 +1,13 @@
+<div class="header"><h1 class="one">TrueVote :)</h1></div>
+{% load static %}
+<link rel="stylesheet" href="{% static 'polls/style.css' %}">
+<h4>Questions</h4>
+{% if latest_question_list%}
+    <div class="Content">
+        {% for question in latest_question_list %}
+        <p><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></p>
+        {% endfor%}
+    </div>
+{% else %}
+    <p>No polls are  available</p>
+{% endif %} 

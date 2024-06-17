@@ -1,0 +1,21 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'polls/style.css' %}">
+<h1 class="topstart">TrueVote</h1>
+<form action="{% url 'polls:vote' question.id %}" method="post">
+    {% csrf_token %}
+    <div class="card">
+        <div class="bg">
+            <h2 class="ques">{{ question.question_text }}</h2>
+            {% if error_message %}<li class="ques"><strong>{{ error_message }}</strong></li>{% endif %}
+            {% for choice in question.choice_set.all %}
+                <input class="ins1" type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}">
+                <label class="ins2" for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br>
+            {% endfor %}
+            <input class="ins3" type="submit" value="Vote">
+        </div>
+        <div class="blob"></div>
+    </div>
+    </form>
+
+    
+      

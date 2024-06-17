@@ -1,7 +1,3 @@
-Sure, here's how you can structure a README.md file for your Django project "TrueVote" on GitHub:
-
----
-
 # TrueVote
 
 TrueVote is a simple Django polling application, following the official Django documentation tutorial.

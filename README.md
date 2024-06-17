@@ -76,6 +76,12 @@ To run this project locally, ensure you have Python and Django installed.
 
 ## Screenshots
 ![admin](https://github.com/MANOJKUMAR0404/Polls_django/assets/159749880/f56490eb-f363-48d5-b675-9d27b339d660)
+
+
 ![index](https://github.com/MANOJKUMAR0404/Polls_django/assets/159749880/a10dd309-b697-4944-b02d-2c80e74af1f8)
+
+
 ![poll_detail](https://github.com/MANOJKUMAR0404/Polls_django/assets/159749880/41f688f8-4fd4-4f58-b8cc-4ce22c62d863)
+
+
 ![poll_result](https://github.com/MANOJKUMAR0404/Polls_django/assets/159749880/8373ba74-1f01-403d-9313-eeb91dc57b73)
